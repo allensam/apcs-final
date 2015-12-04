@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-body {
+html,body {
 	height: 100%;
 	width: 100%;
 }
@@ -12,20 +12,62 @@ ul {
 	list-style-type: none;
 	background-color: black;
 	overflow: hidden;
+	display: inline-block;
+	text-align: center;
 }
 
 li {
-	float: left;
+	display: inline-block;
 	text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    border-right: 1px solid white;
 	a {
 		display: block;
 		color: white;
 	}
 }
 
+.outer {
+	display: table;
+}
+
+.inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
 li:hover {
 	background-color: #333;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	padding: 14px 15px;
+}
+
+.header {
+	text-align: center;
+	height: 100px;
+	width: 100%;		
+}
+.header h1 {
+	display: inline-block;
+}
+.butcont {
+	float: right;
+	height: 100%;
+	width: 40%;
+	
+}
+.login {
+	height: 100%;
+	padding: 0;
+	width: 50%;
+	background-color: blue;
+	display: inline-block;
+}
+.signup {
+	height: 100%;
+	padding: 0;
+	width: 50%;
+	background-color: red;
+	display: inline-block;
 }
