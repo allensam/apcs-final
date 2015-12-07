@@ -2,21 +2,39 @@
 <html>
 <body>
 	<div class="top">
-		<div class="header outer">
-			<div class="inner">
-				<h1>New things store</h1>
-				<div class="butcont">
-					<div class="login">Login</div>
-					<div class="signup">Signup</div>
-				</div>
+		<div class="header">
+			<div class="left"></div>
+			<div class="middle">
+				<h1 class="centeredtext">New things store</h1>
 			</div>
+			<div class="butcont">
+				<div class="login"><p class="centeredtext">Login</p></div>
+				<div class="signup"><p class="centeredtext">Signup</p></div>
+			</div>
+
 		</div>
-	<ul>
-		<li><a>Link one</a></li>
-		<li><a>Link two</a></li>
-		<li><a>Link three</a></li>
+	<ul id="navbar">
+		<li class="navlist"><a>Link one</a></li>
+		<li class="navlist"><a>Link two</a></li>
+		<li class="navlist"><a>Link three</a></li>
 	</ul>
 
+	<div id="container">
+  
+      <h2>Featured</h2>
+
+      <!--  Outer wrapper for presentation only, this can be anything you like -->
+      <div id="my-slideshow">
+
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><%= image_tag("slideshow-car.jpg", :title => "test") %></li>
+          <li><img src="img/banner02.jpg" title="Automatically generated caption"></li>
+          <li><img src="img/banner03.jpg" title="Automatically generated caption"></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+
+      </div>
 
 	</div>
 

@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+jQuery(document).ready(function($) {
+	$('#my-slideshow').bjqs({
+		'height' : 320,
+		'width' : 620,
+		'responsive' : true
+	});
+});
