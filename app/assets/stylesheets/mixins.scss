@@ -4,3 +4,9 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin transition($duration) {
+	-webkit-transtion: ease $duration;
+	-moz-transtion: ease $duration;
+	transition: ease $duration;
+}

@@ -1,3 +1,4 @@
+@import 'mixins';
 * {
 	margin: 0;
 	padding: 0;
@@ -74,7 +75,12 @@ html,body {
 	float: left;
 	color: black;
 	border-left: 1px solid black;
+	@include transition(1s);
+}
 
+.login:hover {
+	@include transition(1s);
+	background-color: rgb(224, 65, 56);
 }
 .signup {
 	height: 100%;
@@ -83,11 +89,22 @@ html,body {
 	float: left;
 	color: black;
 	border-left: 1px solid black;
+	@include transition(1s);
+}
 
+.signup:hover {
+	background-color: blue;
+	@include transition(1s);
 }
 
 .footer {
 	font-size: 12px;
 	text-align: center;
 
+}
+
+.top {
+	h1 {
+		font-size: 38px;
+	}
 }
