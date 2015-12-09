@@ -22,7 +22,7 @@ html,body {
 	background-color: white;
 	display: inline-block;
 	text-align: center;
-    padding: 14px 16px;
+    padding: 0;
     text-decoration: none;
     border-right: 1px solid white;
 	border-left: 1px solid white;
@@ -36,6 +36,9 @@ html,body {
 .navlist:hover {
 	border-right: 1px solid black;
 	border-left: 1px solid black;
+}
+
+.navlink {
 	padding: 14px 16px;
 }
 
@@ -68,20 +71,7 @@ html,body {
 	float: left;
 
 }
-.login {
-	height: 100%;
-	padding: 0;
-	width: 50%;
-	float: left;
-	color: black;
-	border-left: 1px solid black;
-	@include transition(1s);
-}
 
-.login:hover {
-	@include transition(1s);
-	background-color: rgb(224, 65, 56);
-}
 .signup {
 	height: 100%;
 	padding: 0;
@@ -89,11 +79,11 @@ html,body {
 	float: left;
 	color: black;
 	border-left: 1px solid black;
+	text-decoration: none;
 	@include transition(1s);
 }
 
 .signup:hover {
-	background-color: blue;
 	@include transition(1s);
 }
 
@@ -107,4 +97,8 @@ html,body {
 	h1 {
 		font-size: 38px;
 	}
+}
+
+.rainbow {
+	@include transition(.3s);
 }
