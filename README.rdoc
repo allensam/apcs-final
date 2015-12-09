@@ -1,28 +1,15 @@
-== README
+== New things store
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple rails store will pretty dank styling. The store has secured encrypted signup and login.
+The store will be "selling" new things and the reviews will be fake but will be sorted in different ways
+than normal.
 
-Things you may want to cover:
+Rails/Ruby version: most recent
 
-* Ruby version
+When using windows rails s does not work unless devkit is installed
 
-* System dependencies
+WARNING: bcrypt will break before running bundle install, have devkit installed
+then gem install bcrypt --platform=ruby this will insure that the right binary for windows
+is installed
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+After bcrypt success install run bundle install
