@@ -23,7 +23,13 @@ jQuery(document).ready ($) ->
     $(".signup:hover").css "background-color", getRandomColor(100, 75)
 
   $(".signup").mouseleave ->
-    $(".signup").css "background-color", "transparent"
+    $(".signup").css "background-color", "white"
+
+  #snowwwwwwwwwwwwwwwwwwwwww
+  $.letItSnow ".let-it-snow",
+    stickyFlakes: "lis-flake--js"
+    makeFlakes: true
+    sticky: true
 
   #makes each letter of title be raindom color using rainbow class
   randomizeTextColor = (element) ->
