@@ -16,3 +16,9 @@
  = require_home
  = require_mixins
  = require_bjqs
+ *, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body {
+	box-sizing: border-box;
+}
