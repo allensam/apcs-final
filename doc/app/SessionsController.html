@@ -89,6 +89,8 @@
 
   <section class="description">
     
+<p>SEssions controller handles /login and secure login/logout</p>
+
   </section>
 
   
@@ -129,7 +131,7 @@
 
           
           <div class="method-source-code" id="create-source">
-            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 6</span>
+            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 7</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
         <span class="ruby-identifier">user</span> = <span class="ruby-constant">User</span>.<span class="ruby-identifier">find_by_email</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:email</span>])
     <span class="ruby-comment"># If the user exists AND the password entered is correct.</span>
@@ -172,7 +174,7 @@
 
           
           <div class="method-source-code" id="destroy-source">
-            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 20</span>
+            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 21</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">destroy</span>
         <span class="ruby-identifier">session</span>[<span class="ruby-value">:user_id</span>] = <span class="ruby-keyword">nil</span>
         <span class="ruby-identifier">redirect_to</span> <span class="ruby-string">&#39;/&#39;</span>
@@ -206,7 +208,7 @@
 
           
           <div class="method-source-code" id="login-source">
-            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 3</span>
+            <pre><span class="ruby-comment"># File app/controllers/sessions_controller.rb, line 4</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">login</span>
 <span class="ruby-keyword">end</span></pre>
           </div>

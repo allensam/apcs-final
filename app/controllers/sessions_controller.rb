@@ -1,3 +1,4 @@
+#SEssions controller handles /login and secure login/logout
 class SessionsController < ApplicationController
 
 	def login
