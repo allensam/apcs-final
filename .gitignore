@@ -15,3 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+#my ignores
+AUTHORS
+AUTHORS.save
+authors
