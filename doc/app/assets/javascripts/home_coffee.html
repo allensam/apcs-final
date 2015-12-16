@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>home.coffee - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../../README_rdoc.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/bjqs_min_js.html">bjqs.min.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/categories_coffee.html">categories.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/let-it-snow_min_js.html">let-it-snow.min.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/sessions_coffee.html">sessions.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/users_coffee.html">users.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/bjqs_css.html">bjqs.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/categories_scss.html">categories.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/let-it-snow_css.html">let-it-snow.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/mixins_scss.html">mixins.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/sessions_scss.html">sessions.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/slideshow_scss.html">slideshow.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/users_scss.html">users.scss</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page app/assets/javascripts/home.coffee">
+
+<p># Place all the behaviors and hooks related to the matching controller
+here. # All this logic will automatically be available in application.js. #
+You can use CoffeeScript in this file: <a
+href="http://coffeescript.org">coffeescript.org</a>/ getRandomColor = (s,
+l) -&gt;</p>
+
+<pre class="ruby"><span class="ruby-identifier">color</span> = <span class="ruby-string">&quot;hsl(&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-constant">Math</span>.<span class="ruby-identifier">random</span>() <span class="ruby-operator">*</span> <span class="ruby-value">360</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;, &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">s</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;%,&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">+</span> <span class="ruby-string">&quot;%)&quot;</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">color</span>
+</pre>
+
+<p>jQuery(document).ready ($) -&gt;</p>
+
+<pre>$(&quot;#my-slideshow&quot;).bjqs
+  height: 320
+  width: 620
+  responsive: true</pre>
+
+<p>#RandomColor for navlist</p>
+
+<pre>$(&quot;.navlist&quot;).mouseover -&gt;
+  $(&quot;.navlist:hover&quot;).css &quot;background-color&quot;, getRandomColor(100, 75)
+
+$(&quot;.navlist&quot;).mouseleave -&gt;
+  $(&quot;.navlist&quot;).css &quot;background-color&quot;, &quot;transparent&quot;</pre>
+
+<p>#RandomColor for signup button</p>
+
+<pre>$(&quot;.signup&quot;).mouseover -&gt;
+  $(&quot;.signup:hover&quot;).css &quot;background-color&quot;, getRandomColor(100, 75)
+
+$(&quot;.signup&quot;).mouseleave -&gt;
+  $(&quot;.signup&quot;).css &quot;background-color&quot;, &quot;white&quot;
+
+#snowwwwwwwwwwwwwwwwwwwwww
+$.letItSnow &quot;.let-it-snow&quot;,
+  stickyFlakes: &quot;lis-flake--js&quot;
+  makeFlakes: true
+  sticky: true
+
+#makes each letter of title be raindom color using rainbow class
+randomizeTextColor = (element) -&gt;
+  text = $(element).text()
+  $(element).empty()
+  i = 0
+
+  while i &lt; text.length
+    color = colors[Math.floor(colors.length * Math.random())]
+    letter = $(&quot;&lt;span&gt;&quot;,
+      text: text.charAt(i)
+      css:
+        color: color
+        transition: &quot;ease 0.3s&quot;
+    )
+    $(element).append letter
+    i++
+randomize = (selector) -&gt;
+  $(selector).each -&gt;
+    randomizeTextColor this
+colors = [ &quot;#FF7F7F&quot;, &quot;#FF967F&quot;, &quot;#FFAC7F&quot;, &quot;#FFD47F&quot;, &quot;#FFE57F&quot;, &quot;#FFE57F&quot;, &quot;#FFF27F&quot;, &quot;#FFF87F&quot;, &quot;#EEFF7F&quot;, &quot;#DFFF7F&quot;, &quot;#CEFF7F&quot;, &quot;#C7FF7F&quot;, &quot;#B2FF7F&quot;, &quot;#AAFF7F&quot;, &quot;#7FFF7F&quot;, &quot;#7FFF94&quot;, &quot;#7FFFAA&quot;, &quot;#7FFFBF&quot;, &quot;#7FFFD4&quot;, &quot;#7FFFE9&quot;, &quot;#7FFFFF&quot;, &quot;#7FE9FF&quot;, &quot;#7FD4FF&quot;, &quot;#7FBFFF&quot;, &quot;#7FAAFF&quot;, &quot;#7F94FF&quot;, &quot;#7F7FFF&quot;, &quot;#947FFF&quot;, &quot;#A97FFF&quot;, &quot;#BF7FFF&quot;, &quot;#D47FFF&quot;, &quot;#E97FFF&quot;, &quot;#FF7FFF&quot;, &quot;#FF7FE9&quot;, &quot;#FF7FD4&quot;, &quot;#FF7FBF&quot;, &quot;#FF7FA9&quot;, &quot;#FF7F94&quot;, &quot;#FF7F81&quot; ]
+interval = 2000
+$ randomize(&quot;.rainbow&quot;)
+window.setInterval (-&gt;
+  randomize &quot;.rainbow&quot;
+), interval</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

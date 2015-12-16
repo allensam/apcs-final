@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>let-it-snow.css - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../../README_rdoc.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/bjqs_min_js.html">bjqs.min.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/categories_coffee.html">categories.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/home_coffee.html">home.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/let-it-snow_min_js.html">let-it-snow.min.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/sessions_coffee.html">sessions.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/users_coffee.html">users.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/bjqs_css.html">bjqs.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/categories_scss.html">categories.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/home_scss.html">home.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/let-it-snow_css.html">let-it-snow.css</a>
+  
+    <li><a href="../../../app/assets/stylesheets/mixins_scss.html">mixins.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/sessions_scss.html">sessions.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/slideshow_scss.html">slideshow.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/users_scss.html">users.scss</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page app/assets/stylesheets/let-it-snow.css">
+
+<p>.let-it-snow { position: relative }</p>
+
+<p>.lis-flake, .lis-flake–js {</p>
+
+<pre>position: absolute;
+background: #fff;
+border-radius: 50%;
+box-shadow: 0 0 4px #fff</pre>
+
+<p>}</p>
+
+<p>.lis-flake–js { opacity: .2 }</p>
+
+<p>.lis-flake–stuck {</p>
+
+<pre>position: absolute;
+background: #fff;
+border-radius: 50%;
+opacity: .7;
+transition: all .3s ease</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(-n+33) {</p>
+
+<pre>-moz-animation: snow1 8s linear infinite;
+-webkit-animation: snow1 8s linear infinite;
+animation: snow1 8s linear infinite</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(n+33) {</p>
+
+<pre>-moz-animation: snow2 8s 4s linear infinite;
+-webkit-animation: snow2 8s 4s linear infinite;
+animation: snow2 8s 4s linear infinite</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(n+66) {</p>
+
+<pre>-moz-animation: snow3 8s 6s linear infinite;
+-webkit-animation: snow3 8s 6s linear infinite;
+animation: snow3 8s 6s linear infinite</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(1) {</p>
+
+<pre>left: 79%;
+top: -210px;
+width: 4px;
+height: 5px;
+transform: rotate(39deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(2) {</p>
+
+<pre>left: 12%;
+top: -500px;
+width: 6px;
+height: 5px;
+transform: rotate(58deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(3) {</p>
+
+<pre>left: 6%;
+top: -40px;
+width: 2px;
+height: 5px;
+transform: rotate(2deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(4) {</p>
+
+<pre>left: 35%;
+top: -340px;
+width: 3px;
+height: 3px;
+transform: rotate(17deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(5) {</p>
+
+<pre>left: 34%;
+top: -680px;
+width: 2px;
+height: 5px;
+transform: rotate(92deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(6) {</p>
+
+<pre>left: 9%;
+top: -780px;
+width: 1px;
+height: 2px;
+transform: rotate(26deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(7) {</p>
+
+<pre>left: 27%;
+top: -340px;
+width: 2px;
+height: 1px;
+transform: rotate(8deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(8) {</p>
+
+<pre>left: 12%;
+top: -310px;
+width: 6px;
+height: 4px;
+transform: rotate(80deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(9) {</p>
+
+<pre>left: 21%;
+top: -100px;
+width: 5px;
+height: 1px;
+transform: rotate(53deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(10) {</p>
+
+<pre>left: 30%;
+top: -690px;
+width: 3px;
+height: 1px;
+transform: rotate(74deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(11) {</p>
+
+<pre>left: 23%;
+top: -920px;
+width: 4px;
+height: 4px;
+transform: rotate(69deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(12) {</p>
+
+<pre>left: 37%;
+top: -870px;
+width: 3px;
+height: 3px;
+transform: rotate(26deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(13) {</p>
+
+<pre>left: 36%;
+top: -570px;
+width: 5px;
+height: 6px;
+transform: rotate(47deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(14) {</p>
+
+<pre>left: 78%;
+top: -730px;
+width: 5px;
+height: 3px;
+transform: rotate(95deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(15) {</p>
+
+<pre>left: 3%;
+top: -840px;
+width: 3px;
+height: 2px;
+transform: rotate(54deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(16) {</p>
+
+<pre>left: 34%;
+top: -960px;
+width: 2px;
+height: 3px;
+transform: rotate(56deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(17) {</p>
+
+<pre>left: 7%;
+top: -660px;
+width: 4px;
+height: 1px;
+transform: rotate(3deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(18) {</p>
+
+<pre>left: 16%;
+top: -510px;
+width: 5px;
+height: 5px;
+transform: rotate(75deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(19) {</p>
+
+<pre>left: 77%;
+top: -760px;
+width: 3px;
+height: 1px;
+transform: rotate(77deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(20) {</p>
+
+<pre>left: 98%;
+top: -240px;
+width: 4px;
+height: 1px;
+transform: rotate(18deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(21) {</p>
+
+<pre>left: 71%;
+top: -540px;
+width: 6px;
+height: 5px;
+transform: rotate(65deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(22) {</p>
+
+<pre>left: 64%;
+top: -650px;
+width: 2px;
+height: 5px;
+transform: rotate(96deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(23) {</p>
+
+<pre>left: 65%;
+top: -70px;
+width: 1px;
+height: 3px;
+transform: rotate(94deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(24) {</p>
+
+<pre>left: 76%;
+top: -970px;
+width: 3px;
+height: 4px;
+transform: rotate(63deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(25) {</p>
+
+<pre>left: 79%;
+top: -830px;
+width: 3px;
+height: 4px;
+transform: rotate(86deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(26) {</p>
+
+<pre>left: 18%;
+top: -540px;
+width: 2px;
+height: 5px;
+transform: rotate(60deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(27) {</p>
+
+<pre>left: 99%;
+top: -500px;
+width: 6px;
+height: 6px;
+transform: rotate(28deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(28) {</p>
+
+<pre>left: 5%;
+top: -270px;
+width: 6px;
+height: 3px;
+transform: rotate(57deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(29) {</p>
+
+<pre>left: 64%;
+top: -630px;
+width: 5px;
+height: 3px;
+transform: rotate(24deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(30) {</p>
+
+<pre>left: 4%;
+top: -130px;
+width: 4px;
+height: 1px;
+transform: rotate(70deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(31) {</p>
+
+<pre>left: 59%;
+top: -340px;
+width: 4px;
+height: 6px;
+transform: rotate(65deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(32) {</p>
+
+<pre>left: 44%;
+top: -100px;
+width: 1px;
+height: 6px;
+transform: rotate(49deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(33) {</p>
+
+<pre>left: 15%;
+top: -870px;
+width: 2px;
+height: 6px;
+transform: rotate(38deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(34) {</p>
+
+<pre>left: 76%;
+top: -490px;
+width: 2px;
+height: 5px;
+transform: rotate(65deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(35) {</p>
+
+<pre>left: 93%;
+top: -320px;
+width: 1px;
+height: 5px;
+transform: rotate(23deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(36) {</p>
+
+<pre>left: 4%;
+top: -620px;
+width: 5px;
+height: 5px;
+transform: rotate(19deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(37) {</p>
+
+<pre>left: 35%;
+top: -910px;
+width: 5px;
+height: 4px;
+transform: rotate(66deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(38) {</p>
+
+<pre>left: 90%;
+top: -460px;
+width: 4px;
+height: 1px;
+transform: rotate(36deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(39) {</p>
+
+<pre>left: 36%;
+top: -340px;
+width: 1px;
+height: 1px;
+transform: rotate(1deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(40) {</p>
+
+<pre>left: 89%;
+top: -170px;
+width: 6px;
+height: 5px;
+transform: rotate(65deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(41) {</p>
+
+<pre>left: 87%;
+top: -330px;
+width: 6px;
+height: 6px;
+transform: rotate(48deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(42) {</p>
+
+<pre>left: 63%;
+top: -520px;
+width: 4px;
+height: 1px;
+transform: rotate(100deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(43) {</p>
+
+<pre>left: 54%;
+top: -480px;
+width: 4px;
+height: 4px;
+transform: rotate(69deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(44) {</p>
+
+<pre>left: 4%;
+top: -290px;
+width: 4px;
+height: 5px;
+transform: rotate(89deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(45) {</p>
+
+<pre>left: 19%;
+top: -430px;
+width: 2px;
+height: 6px;
+transform: rotate(73deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(46) {</p>
+
+<pre>left: 18%;
+top: -290px;
+width: 6px;
+height: 5px;
+transform: rotate(95deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(47) {</p>
+
+<pre>left: 65%;
+top: -680px;
+width: 5px;
+height: 3px;
+transform: rotate(100deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(48) {</p>
+
+<pre>left: 21%;
+top: -390px;
+width: 2px;
+height: 4px;
+transform: rotate(70deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(49) {</p>
+
+<pre>left: 63%;
+top: -600px;
+width: 4px;
+height: 2px;
+transform: rotate(44deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(50) {</p>
+
+<pre>left: 34%;
+top: -10px;
+width: 6px;
+height: 3px;
+transform: rotate(68deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(51) {</p>
+
+<pre>left: 91%;
+top: -400px;
+width: 2px;
+height: 6px;
+transform: rotate(97deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(52) {</p>
+
+<pre>left: 1%;
+top: -740px;
+width: 4px;
+height: 2px;
+transform: rotate(8deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(53) {</p>
+
+<pre>left: 28%;
+top: -160px;
+width: 2px;
+height: 5px;
+transform: rotate(45deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(54) {</p>
+
+<pre>left: 28%;
+top: -170px;
+width: 2px;
+height: 4px;
+transform: rotate(84deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(55) {</p>
+
+<pre>left: 71%;
+top: -710px;
+width: 5px;
+height: 5px;
+transform: rotate(80deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(56) {</p>
+
+<pre>left: 61%;
+top: -120px;
+width: 5px;
+height: 1px;
+transform: rotate(96deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(57) {</p>
+
+<pre>left: 94%;
+top: -90px;
+width: 2px;
+height: 2px;
+transform: rotate(73deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(58) {</p>
+
+<pre>left: 83%;
+top: 0px;
+width: 2px;
+height: 5px;
+transform: rotate(48deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(59) {</p>
+
+<pre>left: 88%;
+top: -430px;
+width: 4px;
+height: 5px;
+transform: rotate(1deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(60) {</p>
+
+<pre>left: 33%;
+top: -30px;
+width: 6px;
+height: 5px;
+transform: rotate(36deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(61) {</p>
+
+<pre>left: 50%;
+top: -790px;
+width: 6px;
+height: 4px;
+transform: rotate(5deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(62) {</p>
+
+<pre>left: 32%;
+top: -960px;
+width: 2px;
+height: 4px;
+transform: rotate(45deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(63) {</p>
+
+<pre>left: 79%;
+top: -880px;
+width: 3px;
+height: 4px;
+transform: rotate(23deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(64) {</p>
+
+<pre>left: 13%;
+top: -10px;
+width: 4px;
+height: 4px;
+transform: rotate(9deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(65) {</p>
+
+<pre>left: 92%;
+top: -340px;
+width: 4px;
+height: 4px;
+transform: rotate(30deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(66) {</p>
+
+<pre>left: 26%;
+top: -210px;
+width: 6px;
+height: 2px;
+transform: rotate(29deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(67) {</p>
+
+<pre>left: 77%;
+top: -590px;
+width: 1px;
+height: 6px;
+transform: rotate(13deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(68) {</p>
+
+<pre>left: 15%;
+top: -70px;
+width: 5px;
+height: 3px;
+transform: rotate(37deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(69) {</p>
+
+<pre>left: 71%;
+top: -180px;
+width: 6px;
+height: 4px;
+transform: rotate(60deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(70) {</p>
+
+<pre>left: 41%;
+top: -930px;
+width: 2px;
+height: 5px;
+transform: rotate(94deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(71) {</p>
+
+<pre>left: 93%;
+top: -870px;
+width: 5px;
+height: 3px;
+transform: rotate(42deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(72) {</p>
+
+<pre>left: 54%;
+top: -470px;
+width: 1px;
+height: 5px;
+transform: rotate(90deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(73) {</p>
+
+<pre>left: 31%;
+top: -520px;
+width: 3px;
+height: 5px;
+transform: rotate(42deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(74) {</p>
+
+<pre>left: 18%;
+top: -810px;
+width: 5px;
+height: 3px;
+transform: rotate(8deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(75) {</p>
+
+<pre>left: 12%;
+top: -660px;
+width: 3px;
+height: 4px;
+transform: rotate(64deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(76) {</p>
+
+<pre>left: 17%;
+top: -860px;
+width: 5px;
+height: 6px;
+transform: rotate(73deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(77) {</p>
+
+<pre>left: 82%;
+top: -690px;
+width: 1px;
+height: 4px;
+transform: rotate(68deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(78) {</p>
+
+<pre>left: 8%;
+top: -850px;
+width: 4px;
+height: 5px;
+transform: rotate(30deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(79) {</p>
+
+<pre>left: 19%;
+top: -420px;
+width: 5px;
+height: 2px;
+transform: rotate(100deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(80) {</p>
+
+<pre>left: 7%;
+top: -810px;
+width: 5px;
+height: 1px;
+transform: rotate(68deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(81) {</p>
+
+<pre>left: 18%;
+top: -450px;
+width: 2px;
+height: 4px;
+transform: rotate(82deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(82) {</p>
+
+<pre>left: 26%;
+top: -900px;
+width: 5px;
+height: 3px;
+transform: rotate(26deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(83) {</p>
+
+<pre>left: 86%;
+top: -590px;
+width: 1px;
+height: 2px;
+transform: rotate(73deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(84) {</p>
+
+<pre>left: 72%;
+top: -230px;
+width: 2px;
+height: 2px;
+transform: rotate(55deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(85) {</p>
+
+<pre>left: 26%;
+top: -700px;
+width: 6px;
+height: 3px;
+transform: rotate(11deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(86) {</p>
+
+<pre>left: 46%;
+top: -840px;
+width: 2px;
+height: 2px;
+transform: rotate(100deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(87) {</p>
+
+<pre>left: 5%;
+top: -600px;
+width: 4px;
+height: 3px;
+transform: rotate(46deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(88) {</p>
+
+<pre>left: 6%;
+top: -610px;
+width: 6px;
+height: 4px;
+transform: rotate(65deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(89) {</p>
+
+<pre>left: 45%;
+top: -420px;
+width: 3px;
+height: 5px;
+transform: rotate(80deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(90) {</p>
+
+<pre>left: 45%;
+top: -100px;
+width: 6px;
+height: 1px;
+transform: rotate(33deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(91) {</p>
+
+<pre>left: 6%;
+top: -830px;
+width: 3px;
+height: 6px;
+transform: rotate(4deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(92) {</p>
+
+<pre>left: 58%;
+top: -770px;
+width: 1px;
+height: 3px;
+transform: rotate(89deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(93) {</p>
+
+<pre>left: 23%;
+top: -870px;
+width: 4px;
+height: 6px;
+transform: rotate(32deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(94) {</p>
+
+<pre>left: 89%;
+top: -340px;
+width: 6px;
+height: 4px;
+transform: rotate(7deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(95) {</p>
+
+<pre>left: 46%;
+top: -790px;
+width: 4px;
+height: 2px;
+transform: rotate(91deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(96) {</p>
+
+<pre>left: 94%;
+top: -140px;
+width: 6px;
+height: 5px;
+transform: rotate(22deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(97) {</p>
+
+<pre>left: 32%;
+top: -430px;
+width: 3px;
+height: 1px;
+transform: rotate(55deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(98) {</p>
+
+<pre>left: 85%;
+top: -40px;
+width: 6px;
+height: 1px;
+transform: rotate(64deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(99) {</p>
+
+<pre>left: 66%;
+top: -710px;
+width: 1px;
+height: 1px;
+transform: rotate(42deg)</pre>
+
+<p>}</p>
+
+<p>.lis-flake:nth-child(100) {</p>
+
+<pre>left: 33%;
+top: -790px;
+width: 1px;
+height: 4px;
+transform: rotate(55deg)</pre>
+
+<p>} @-moz-keyframes  snow1 { 0% { -moz-transform:translate(-250px, 0);
+opacity:1 } 100% { -moz-transform:translate(250px, 1500px); opacity:0 } }
+@-moz-keyframes  snow2 { 0% { -moz-transform:translate(0, 0); opacity:1 }
+100% { -moz-transform:translate(250px, 2500px); opacity:.5 } }
+@-moz-keyframes  snow3 { 0% { -moz-transform:translate(0, 0); opacity:1 }
+100% { -moz-transform:translate(0, 2500px); opacity:.5 } }
+@-webkit-keyframes  snow1 { 0% { -webkit-transform:translate(-250px, 0);
+opacity:1 } 100% { -webkit-transform:translate(250px, 1500px); opacity:0 }
+} @-webkit-keyframes  snow2 { 0% { -webkit-transform:translate(0, 0);
+opacity:1 } 100% { -webkit-transform:translate(250px, 2500px); opacity:.5 }
+} @-webkit-keyframes  snow3 { 0% { -webkit-transform:translate(0, 0);
+opacity:1 } 100% { -webkit-transform:translate(0, 2500px); opacity:.5 } }
+@keyframes  snow1 { 0% { transform:translate(-250px, 0); opacity:1 } 100% {
+transform:translate(250px, 1500px); opacity:0 } } @keyframes  snow2 { 0% {
+transform:translate(0, 0); opacity:1 } 100% { transform:translate(250px,
+2500px); opacity:.5 } } @keyframes  snow3 { 0% { transform:translate(0, 0);
+opacity:1 } 100% { transform:translate(0, 2500px); opacity:.5 } }</p>
+
+<pre class="ruby"><span class="ruby-comment"># sourceMappingURL=let-it-snow.css.map</span>
+</pre>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
