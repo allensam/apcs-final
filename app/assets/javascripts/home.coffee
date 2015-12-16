@@ -2,7 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 getRandomColor = (s, l) ->
-  color = "hsl(" + Math.random() * 360 + ", " + s + "%," + l + "%)"
+  randomdeg = Math.random() * 360
+  color = "hsl(" + randomdeg + ", " + s + "%," + l + "%)"
   return color
 
 jQuery(document).ready ($) ->
